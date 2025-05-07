@@ -19,7 +19,5 @@ function Home() {
   );
 }
 
-//DAGDAGTO
-
 
 export default Home;
