@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import Footer from '../templates/Footer';
 
 function Home() {
   return (
@@ -12,14 +11,9 @@ function Home() {
           Your browser does not support the video tag.
         </video>
       </div>
-
-      {/* Additional Footer Component */}
-      <Footer />
     </div>
   );
 }
-
-//DAGDAGTO
 
 
 export default Home;

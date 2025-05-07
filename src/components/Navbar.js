@@ -1,45 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'; // Make sure this contains the snippet's CSS
 
-function Layout() {
-  return (
-    <div className="page-container">
-      {/* HEADER SECTION */}
-      <header className="header">
-        {/* Left side: logo + text */}
-        <div className="header-left">
-          <img
-            src="archicastlogo.png"
-            alt="Archicast Logo"
-            className="logo-img"
-          />
-          <div>
-            <h1 className="logo">ARCHICAST</h1>
-            <p className="tagline">Build the Future with Excellence and Innovation</p>
-          </div>
+const Nav = () => (
+  <div className="page-container">
+    <header className="header">
+      <div className="header-left">
+        <img
+          src="archicastlogo.png"
+          alt="Archicast Logo"
+          className="logo-img"
+        />
+        <div>
+          <h1 className="logo">ARCHICAST</h1>
+          <p className="tagline">Build the Future with Excellence and Innovation</p>
         </div>
+      </div>
+      <div className="header-right">
+        <nav className="fixed-nav">
+          <ul className="navbar-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+);
 
-        {/* Right side: nav bar */}
-        <div className="header-right">
-          <nav>
-            <ul className="navbar-list">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      {/* MAIN CONTENT (e.g., hero section, etc.) */}
-      <main className="main-content">
-        {/* Your page content goes here */}
-      </main>
-    </div>
-  );
-}
-
-export default Layout;
+export default Nav;

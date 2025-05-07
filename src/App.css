@@ -1,7 +1,33 @@
-/* App.css */
-.app-container {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+html {
+  scroll-behavior: smooth;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+}
+
+.fixed-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.fixed-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding-top: 70px; /* height of nav */
+}
+
+section {
+  min-height: 100vh;
+  padding: 2rem;
+}

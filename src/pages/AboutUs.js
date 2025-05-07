@@ -1,8 +1,6 @@
 // pages/AboutUs/AboutUs.js
 import React from 'react';
 import './AboutUs.css';
-import Footer from '../templates/Footer';
-
 function AboutUs() {
   return (
     <div id="crew" className="crew-section">
@@ -24,8 +22,6 @@ function AboutUs() {
           <p>President</p>
         </div>
       </div>
-       
-  <Footer />
   </div>
     
   );
