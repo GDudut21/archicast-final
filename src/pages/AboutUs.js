@@ -24,8 +24,6 @@ function AboutUs() {
           <p>President</p>
         </div>
       </div>
-       
-  <Footer />
   </div>
     
   );
