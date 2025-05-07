@@ -1,7 +1,6 @@
 // ContactUs.js
 import React from 'react';
 import './ContactUs.css';
-
 function ContactUs() {
   return (
     <div id="contact" className="container">

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-
+import Footer from '../templates/Footer';
 function Projects() {
   return (
     <div className="projects-container">
@@ -20,6 +20,7 @@ function Projects() {
         <div className="project-item">
           <h2>Retail Storefront</h2>
           <p>Stylish and functional layout for a boutique clothing shop.</p>
+          <Footer />
         </div>
       </div>
     </div>
